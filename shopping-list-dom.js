@@ -13,16 +13,14 @@ function add(){
   
     factoryList.add(shoppingElem.value,myPrice.value)
     var li = document.createElement('li');
-    var lol = document.createTextNode(shoppingElem.value)
+    var lol = document.createTextNode(shoppingElem.value +' R' + myPrice.value)
     li.appendChild(lol)
     var myLol = document.getElementById('listitems').appendChild(li)
 
     totalElem.innerHTML = factoryList.total1()
     errorElem.innerHTML = factoryList.error()
 
-    if(factoryList.total1() >= budgetElem.value){
-      alert('you have reached the max')
-    }
+
 }
 
 function max(){
