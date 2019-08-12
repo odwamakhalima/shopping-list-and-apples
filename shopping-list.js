@@ -6,6 +6,7 @@ function fruits() {
     var myList;
     const shopList = [];
     var shoppingList= {}
+    var myMaxim;
 
 
     function myError() {
@@ -42,7 +43,7 @@ function fruits() {
     }
 
     function theMax(maxim) {
-        var myMaxim = Number(maxim)
+       myMaxim = Number(maxim)
         if(allFruits() >= myMaxim){
             alert('ttiyueortyg')
         }
