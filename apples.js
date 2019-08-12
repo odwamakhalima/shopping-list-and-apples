@@ -1,4 +1,3 @@
-
 function totalNumberSold(applesSoldList) {
 	return 0;
 }
