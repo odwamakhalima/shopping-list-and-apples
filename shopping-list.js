@@ -8,7 +8,6 @@ function fruits() {
     var shoppingList= {}
     var myMaxim;
 
-
     function myError() {
         return errorMessage
     }
@@ -18,21 +17,20 @@ function fruits() {
         myList = list
         finalPrice = Number(thePrices)
         var myTest = regex.test(myList);
-       
             if (myTest == false && myList.length > 0) {
                 shoppingList = {
                     myList,
                     finalPrice
                 };
                 shopList.push(shoppingList);
-                console.log(shopList)
-                
+                console.log(shoppingList)
             }
+            
             else {
                 errorMessage = 'This Item is not available'
             }
         }
-    
+        
     function fruit1() {
         return shoppingList
     }
@@ -44,10 +42,8 @@ function fruits() {
 
     function theMax(maxim) {
        myMaxim = Number(maxim)
-        if(allFruits() >= myMaxim){
-            alert('ttiyueortyg')
-        }
     }
+    
     return {
         add: myAdd,
         myMax: theMax,

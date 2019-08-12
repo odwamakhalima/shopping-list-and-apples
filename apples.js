@@ -1,9 +1,12 @@
 function totalNumberSold(applesSoldList) {
-	return 0;
+	
+	var result = applesSoldList.map(applesSoldList => applesSoldList.qty).reduce((prev, next) => prev + next);
+return result
 }
 
 function totalIncome(applesSoldList) {
-	return 0;
+	var result2 = applesSoldList.map(applesSoldList => applesSoldList.qty).reduce((prev, next) => prev + next);
+return result2
 }
 
 function totalIncomeGreenApples(applesSoldList){
